@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - InovaTech </title>
+    <link rel="stylesheet" href="style5.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .contactform-messages {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://www.facebook.com/InovaTech-Solutions-102188462211813" target="_blank"><img src="logo-facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/InovaTechSol" target="_blank"><img src="logo-twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/inovatechsolutions/" target="_blank"><img src="logo-insta.png" alt="Instagram"></a>
+        </div>
+    </header>
+    <main>
+        <section class="contact-section">
+            <img class="contact-image" src="Logo da empresa.png" alt="Contact image">
+            <h1 class="centered-text">Entre em Contato Conosco</h1>
+            <p class="centered-text">Preencha o formulário abaixo e entraremos em contato com você assim que possível.</p>
+            <form method="post" name="myemailform" id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contactform-messages active">Após enviar, aguarde nossa reposta!☺</div>
+            <script>
+                $("#contact-form").on('submit',function(event) {
+                    event.preventDefault();
+
+                    // Clear form fields
+                    $('#contact-form')[0].reset();
+
+                    $(".contactform-messages").addClass("active");
+                });
+            </script>
+        </section>
+    </main>
+    <footer class="site-footer fixed">
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

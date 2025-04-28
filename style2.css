@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.site-header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.site-header nav ul li a:hover {
+    background-color: #555555;
+}
+
+.sobre-nos {
+    margin-left: 0px;
+    font-size: 2.6rem;
+    margin-bottom: -3rem;
+  }
+
+.hero {
+    padding: 2.0rem;
+    text-align: center;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    color: #333333;
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    flex-basis: 17%;
+}
+
+.hero img {
+    width: 20%;
+    border-radius: 5px;
+}
+
+.hero p {
+    color: #666;
+    margin-bottom: 2rem;
+    flex-basis: 60%;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10rem;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.images-with-comments {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.img-container {
+    position: relative;
+    width: 30%;
+}
+
+.img-with-comment {
+    width: 100%;
+    height: auto;
+}
+
+.comment {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.img-container:hover .comment {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+/* General reset and box model settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Site header styles */
+.site-header {
+    background-color: #333333;
+    padding: 1rem;
+}
+
+.site-header nav ul {
+    /* Use 'flex' for a horizontal layout with equal space between elements */
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header nav ul li a {
+    /* Estilos gerais de link */
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.site-footer.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.1rem;
+}
